@@ -904,15 +904,15 @@ label:focus {
     width: 30%;
     padding-top: 216px;
     padding-left: 49px;
-    padding-right: 120px;
+    padding-right: 115px;
   }
   .past-container .past-performers .past-performers-txt-wrapper .past-performers-heading {
     font-size: 3.2rem;
   }
   .past-container .carousel-wrapper {
     display: inline-block;
-    position: relative;
-    top: 27px;
+    position: absolute;
+    right: 36px;
   }
   .past-container .carousel-wrapper .carousel-container {
     display: inline-block;
@@ -1110,9 +1110,6 @@ label:focus {
   .past-container .past-performers .past-performers-txt-wrapper a {
     width: 168px;
     height: 60px;
-  }
-  .past-container .past-performers .carousel-wrapper {
-    left: -37px;
   }
   .news-container .news-information {
     width: 79%;
