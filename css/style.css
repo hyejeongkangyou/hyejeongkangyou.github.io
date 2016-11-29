@@ -238,7 +238,7 @@ label:focus {
 .next-event p:nth-child(2), .next-event p:nth-child(3) {
   display: inline-block;
   margin-top: 30px;
-  margin-right: 24%;
+  margin-right: 23%;
 }
 
 .next-event span {
@@ -987,7 +987,7 @@ label:focus {
     margin-right: 10px;
   }
   .news-container .news-information .info-schedule {
-    margin-left: 10px;
+    margin-left: 5px;
     box-sizing: border-box;
   }
   .subscribe-container {
