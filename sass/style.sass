@@ -630,7 +630,7 @@ label:focus
 // Tablet Mode
 // **************************************/
 
-@media (min-width: 768px)
+@media all and (min-width: 768px)
 
   .bg-video-container video
     width: auto
@@ -845,7 +845,7 @@ label:focus
 // Desktop Mode
 // ***************************************/
 
-@media (min-width: 992px)
+@media all and (min-width: 992px)
 
   .bar-menu
     @include only-mobile-tablet
@@ -893,7 +893,7 @@ label:focus
       margin-top: 104px
 
   .next-event
-    top: 15.1%
+    top: 13.5%
     p:first-child
       padding-left: 100px
       width: 19.91667%
@@ -982,7 +982,7 @@ label:focus
 // Desktop Mode - 1200px
 // ***************************************/
 
-@media (min-width: 1200px)
+@media all and (min-width: 1200px)
 
   .bar-menu
     @include only-mobile-tablet
@@ -1013,9 +1013,6 @@ label:focus
       opacity: 0.6
       transform: rotate(360deg)
 
-  .main-container
-    @include desktop-organize
-
   .main-title
     left: 100px
     .button-container
@@ -1023,7 +1020,7 @@ label:focus
 
 
   .next-event
-    top: 15.5%
+    top: 15.2%
     p:first-child
       padding-left: 100px
       width: 19.91667%
