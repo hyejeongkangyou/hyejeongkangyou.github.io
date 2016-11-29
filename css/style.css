@@ -174,7 +174,7 @@ label:focus {
 }
 
 .main-title {
-  width: 210px;
+  width: 186px;
   position: absolute;
   top: 100px;
   left: 20px;
@@ -184,7 +184,7 @@ label:focus {
 
 .main-title .main-txt {
   font-family: 'Francois One', sans-serif;
-  font-size: 2.6rem;
+  font-size: 2.3rem;
   line-height: 1;
   color: #fff;
 }
