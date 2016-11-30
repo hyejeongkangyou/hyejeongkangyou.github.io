@@ -244,7 +244,7 @@ label:focus {
 .next-event span {
   font-family: 'Cabin Sketch', cursive;
   color: #fff;
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
 .next-event .btn_wrapper {
@@ -313,7 +313,7 @@ label:focus {
 
 .celebrate-container .txt-celebrate .txt-wrapper p {
   font-family: 'Francois One', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-top: 29px;
 }
 
@@ -466,7 +466,7 @@ label:focus {
 
 .carousel-container .carousel-view article h2 {
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: .9rem;
   color: #B21E29;
   font-family: 'Cabin Sketch', cursive;
   font-weight: 500;
@@ -492,7 +492,7 @@ label:focus {
 .carousel-controls .carousel-navigator {
   display: inline-block;
   position: absolute;
-  top: 68.5%;
+  top: 69.5%;
   left: 50%;
 }
 
@@ -553,7 +553,7 @@ label:focus {
 
 .news-container {
   background: url("../images/noise.png");
-  height: 675px;
+  height: 689px;
 }
 
 .news-container .news-information {
@@ -603,7 +603,7 @@ label:focus {
 
 .news-container .news-information h2.info-headline {
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: .9rem;
   color: #B21E29;
   font-family: 'Cabin Sketch', cursive;
   font-weight: 500;
@@ -611,7 +611,7 @@ label:focus {
   position: absolute;
   display: inline-block;
   top: 5px;
-  left: 163px;
+  left: 138px;
   width: 50%;
 }
 
@@ -650,6 +650,7 @@ label:focus {
 }
 
 .subscribe-container .subscribe p {
+  text-transform: uppercase;
   font-family: 'Francois One', sans-serif;
   font-size: 1.2rem;
   -webkit-font-smoothing: antialiased;
@@ -756,7 +757,7 @@ label:focus {
 .footer a, .footer p {
   color: #fff;
   font-family: din, sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   letter-spacing: 0.7px;
 }
 
@@ -999,7 +1000,7 @@ label:focus {
     padding: 23px 40px;
   }
   .subscribe-container .subscribe {
-    width: 25%;
+    width: 28%;
     display: inline-block;
   }
   .subscribe-container .input-subscribe {
@@ -1012,9 +1013,13 @@ label:focus {
   .footer {
     height: 81px;
   }
+  .footer a {
+    font-size: .8rem;
+  }
   .footer p {
     display: inline-block;
-    padding-left: 228px;
+    padding-left: 94px;
+    font-size: .8rem;
   }
 }
 
@@ -1057,6 +1062,9 @@ label:focus {
     left: 18.9%;
     display: inline-block;
   }
+  .bg-video-container {
+    width: 107%;
+  }
   .bg-video-container .bg-video {
     width: 100%;
     height: 110vh;
@@ -1066,11 +1074,14 @@ label:focus {
   .main-title {
     left: 100px;
   }
+  .main-title .main-txt {
+    font-size: 5.1rem;
+  }
   .main-title .button-container {
     margin-top: 104px;
   }
   .next-event {
-    top: 13.5%;
+    top: 14.3%;
   }
   .next-event p:first-child {
     padding-left: 100px;
@@ -1081,7 +1092,7 @@ label:focus {
   }
   .celebrate-container .txt-celebrate {
     width: 58%;
-    padding: 96px 180px 243px 137px;
+    padding: 96px 135px 243px 137px;
   }
   .celebrate-container .txt-celebrate .txt-wrapper h2 {
     margin-top: 28px;
@@ -1110,6 +1121,9 @@ label:focus {
   .past-container .past-performers .past-performers-txt-wrapper a {
     width: 168px;
     height: 60px;
+  }
+  .news-container {
+    width: 107%;
   }
   .news-container .news-information {
     width: 79%;
@@ -1142,7 +1156,7 @@ label:focus {
     height: 243px;
   }
   .subscribe-container .subscribe {
-    width: 23%;
+    width: 28%;
   }
   .subscribe-container .subscribe h2 {
     padding-top: 27px;
@@ -1161,12 +1175,13 @@ label:focus {
     left: 89%;
   }
   .footer {
+    width: 83%;
     position: absolute;
     width: 81%;
     left: 18.9%;
   }
   .footer p {
-    padding-left: 0;
+    padding-left: 22.9px;
   }
 }
 
@@ -1204,6 +1219,12 @@ label:focus {
     opacity: 0.6;
     transform: rotate(360deg);
   }
+  .main-container {
+    left: 16.3%;
+  }
+  .bg-video-container {
+    width: 107%;
+  }
   .main-title {
     left: 100px;
   }
@@ -1211,7 +1232,8 @@ label:focus {
     margin-top: 104px;
   }
   .next-event {
-    top: 15.2%;
+    top: 16.3%;
+    height: 190px;
   }
   .next-event p:first-child {
     padding-left: 100px;
@@ -1220,9 +1242,15 @@ label:focus {
   .next-event p:nth-child(2), .next-event p:nth-child(3) {
     width: 11.667%;
   }
+  .next-event .btn_wrapper .btn_learn {
+    margin-top: 24px;
+  }
+  .celebrate-container {
+    margin-top: 87px;
+  }
   .celebrate-container .txt-celebrate {
     width: 58%;
-    padding: 96px 180px 243px 137px;
+    padding: 96px 200px 243px 137px;
   }
   .celebrate-container .txt-celebrate .txt-wrapper h1 {
     margin-top: 12px;
@@ -1237,7 +1265,7 @@ label:focus {
     top: 40%;
   }
   .past-container {
-    margin-left: 10%;
+    margin-left: 17%;
   }
   .past-container .past-performers .past-performers-txt-wrapper {
     width: 22.7%;
@@ -1251,6 +1279,9 @@ label:focus {
     width: 168px;
     height: 60px;
   }
+  .past-container .carousel-wrapper {
+    right: 90px;
+  }
   .carousel-controls .carousel-navigator .carousel-previous-btn {
     right: 171px;
     top: -321px;
@@ -1261,6 +1292,7 @@ label:focus {
   }
   .news-container {
     height: 705px;
+    width: 107%;
   }
   .news-container .news-information {
     width: 80%;
@@ -1287,22 +1319,25 @@ label:focus {
   }
   .subscribe-container {
     width: 89%;
-    margin: 54px 11%;
+    margin: 54px 18%;
     height: 189px;
   }
   .subscribe-container .subscribe h1 {
     padding-top: 27px;
+  }
+  .subscribe-container .subscribe p {
+    font-size: 1rem;
   }
   .subscribe-container .input-subscribe {
     top: 66px;
     width: 70%;
   }
   .subscribe-container .input-subscribe .inputbox input {
-    width: 350px;
+    width: 370px;
     margin-right: 20px;
   }
   .subscribe-container .input-subscribe .btn-subscribe {
-    width: 190px;
+    width: 160px;
   }
   .subscribe-container .input-subscribe .btn-subscribe::after {
     left: 89%;
@@ -1311,5 +1346,13 @@ label:focus {
     position: absolute;
     width: 81%;
     left: 18.9%;
+    width: 87%;
+    left: 16%;
+  }
+  .footer a.photo-credits {
+    margin-right: 127px;
+  }
+  .footer p {
+    padding-left: 187px;
   }
 }

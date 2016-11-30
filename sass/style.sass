@@ -112,7 +112,7 @@
 
 @mixin small-heading
   @include uppercase
-  font-size: 1rem
+  font-size: .9rem
   color: #B21E29
   font-family: 'Cabin Sketch', cursive
   font-weight: 500
@@ -306,7 +306,7 @@ label:focus
     margin-right: 22%
   span
     @include event_desc
-    font-size: 1.3rem
+    font-size: 1rem
   .btn_wrapper
     display: inline-block
     .btn_learn
@@ -337,7 +337,7 @@ label:focus
         color: #B21E29
       p
         font-family: 'Francois One', sans-serif
-        font-size: 1.5rem
+        font-size: 1.3rem
         margin-top: 29px
 
 // join members
@@ -441,7 +441,7 @@ label:focus
   .carousel-navigator
     display: inline-block
     position: absolute
-    top: 68.5%
+    top: 69.5%
     left: 50%
     button
       @include hidden_txt
@@ -485,7 +485,7 @@ label:focus
 // news
 .news-container
   background: url("../images/noise.png")
-  height: 675px
+  height: 689px
   .news-information
     @include organize-article
     .news-heading
@@ -517,7 +517,7 @@ label:focus
       position: absolute
       display: inline-block
       top: 5px
-      left: 163px
+      left: 138px
       width: 50%
     p
       @include small-txt
@@ -544,6 +544,7 @@ label:focus
       font-weight: 200
       padding-top: 38px
     p
+      @include uppercase
       font-family: 'Francois One', sans-serif
       font-size: 1.2rem
       -webkit-font-smoothing: antialiased
@@ -617,7 +618,7 @@ label:focus
   a, p
     color: #fff
     font-family: din, sans-serif
-    font-size: 0.8rem
+    font-size: 0.7rem
     letter-spacing: 0.7px
   a
     margin-right: 20px
@@ -826,7 +827,7 @@ label:focus
     box-sizing: border-box
     padding: 23px 40px
     .subscribe
-      width: 25%
+      width: 28%
       display: inline-block
     .input-subscribe
       width: 65%
@@ -837,9 +838,12 @@ label:focus
 
   .footer
     height: 81px
+    a
+      font-size: .8rem
     p
       display: inline-block
-      padding-left: 228px
+      padding-left: 94px
+      font-size: .8rem
 
 
 
@@ -884,6 +888,7 @@ label:focus
     display: inline-block
 
   .bg-video-container
+    width: 107%
     .bg-video
       width: 100%
       height: 110vh
@@ -892,11 +897,13 @@ label:focus
 
   .main-title
     left: 100px
+    .main-txt
+      font-size: 5.1rem
     .button-container
       margin-top: 104px
 
   .next-event
-    top: 13.5%
+    top: 14.3%
     p:first-child
       padding-left: 100px
       width: 19.91667%
@@ -906,7 +913,7 @@ label:focus
   .celebrate-container
     .txt-celebrate
       width: 58%
-      padding: 96px 180px 243px 137px
+      padding: 96px 135px 243px 137px
       .txt-wrapper
         h2
           margin-top: 28px
@@ -934,6 +941,7 @@ label:focus
         // left: -37px
 
   .news-container
+    width: 107%
     .news-information
       width: 79%
       margin-left: 13%
@@ -959,7 +967,7 @@ label:focus
     margin: 54px 14%
     height: 243px
     .subscribe
-      width: 23%
+      width: 28%
       h2
         padding-top: 27px
     .input-subscribe
@@ -973,10 +981,11 @@ label:focus
         &::after
           left: 89%
   .footer
+    width: 83%
     position: absolute
     @include desktop-organize
     p
-      padding-left: 0
+      padding-left: 22.9px
 
 
 
@@ -1016,6 +1025,13 @@ label:focus
       opacity: 0.6
       transform: rotate(360deg)
 
+
+  .main-container
+    left: 16.3%
+
+  .bg-video-container
+    width: 107%
+
   .main-title
     left: 100px
     .button-container
@@ -1023,17 +1039,22 @@ label:focus
 
 
   .next-event
-    top: 15.2%
+    top: 16.3%
+    height: 190px
     p:first-child
       padding-left: 100px
       width: 19.91667%
     p:nth-child(2), p:nth-child(3)
       width: 11.667%
+    .btn_wrapper
+      .btn_learn
+        margin-top: 24px
 
   .celebrate-container
+    margin-top: 87px
     .txt-celebrate
       width: 58%
-      padding: 96px 180px 243px 137px
+      padding: 96px 200px 243px 137px
       .txt-wrapper
         h1
           margin-top: 12px
@@ -1046,7 +1067,7 @@ label:focus
       top: 40%
   
   .past-container
-    margin-left: 10%
+    margin-left: 17%
     .past-performers
       .past-performers-txt-wrapper
         width: 22.7%
@@ -1056,6 +1077,8 @@ label:focus
           margin-bottom: 21px
         a
           @include button-big
+    .carousel-wrapper
+      right: 90px
 
   .carousel-controls
     .carousel-navigator
@@ -1069,6 +1092,7 @@ label:focus
 
   .news-container
     height: 705px
+    width: 107%
     .news-information
       width: 80%
       [class^='info-']
@@ -1089,23 +1113,31 @@ label:focus
 
   .subscribe-container
     width: 89%
-    margin: 54px 11%
+    margin: 54px 18%
     height: 189px
     .subscribe
       h1
         padding-top: 27px
+      p
+        font-size: 1rem
     .input-subscribe
       top: 66px
       width: 70%
       .inputbox
         input
-          width: 350px
+          width: 370px
           margin-right: 20px
       .btn-subscribe
-        width: 190px
+        width: 160px
         &::after
           left: 89%
 
   .footer
     position: absolute
     @include desktop-organize
+    width: 87%
+    left: 16%
+    a.photo-credits
+      margin-right: 127px
+    p
+      padding-left: 187px
