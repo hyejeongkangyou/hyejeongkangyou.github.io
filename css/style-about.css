@@ -1,0 +1,226 @@
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+
+body{
+	overflow-y: scroll;
+	background: #efefef;
+}
+
+.readable-hidden{
+	overflow: hidden;
+	position: absolute;
+	/* <shape> values */
+	/* <shape> = rect(top, right, bottom, left) */
+	clip: rect(0, 0, 0, 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+}
+
+.page-header{
+  position: fixed;
+  height: 250px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 0.7em 0;
+  /*background: linear-gradient(180deg, #4d4b4a, hsla(0, 0%, 0%, 0.42));*/
+  /*background: linear-gradient(180deg, rgb(148, 204, 224), hsla(0, 0%, 0%, 0.12));*/
+  background-color: rgb(148, 204, 224);
+  background-image: url('../images/yellowflower.png'), url('../images/yellowflower-400.png'), url('../images/yellowflower-300.png');
+  text-align: center;
+  text-shadow: 0 8px 10px rgba(23,22,22,0.2);
+  color: #fff;
+  transition: top .2s ease-in-out;
+  -webkit-animation: flower 20s linear infinite;
+  -moz-animation: flower 20s linear infinite;
+  -ms-animation: flower 20s linear infinite;
+  animation: flower 20s linear infinite;
+}
+
+.header-logo{
+  margin-top: 60px;
+  margin-bottom: 45px;
+}
+
+.header-logo a{
+  /*color: #fff;*/
+}
+
+.gnb{
+	margin-top: 10px;
+}
+
+.navigation li{
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  display: inline-block;
+  padding-left: 15px;
+}
+
+.navigation a{
+  transform: scale(1);
+  transition: all .5s;
+  cursor: pointer;
+}
+
+.navigation a:hover,
+.navigation a:focus{
+  transform: scale(1.3);
+  color: #003652;
+}
+
+.navigation a{
+	color: #fff;
+}
+
+.link-container{
+  width: 50px;
+  height: 50px;
+  background: #efefef;
+  background: url(../images/bars-green.svg);
+  display: inline-block;
+  position: absolute;
+  background-size: cover;
+  top: 10px;
+  right: 10px;
+  border: none;
+}
+
+.page-main{
+	width: 100%;
+	position: relative;
+	top: 272px;
+	box-sizing: border-box;
+}
+
+.page-main h1{
+	background: #666699;
+	padding: 15px 10px;
+	opacity: 0.9;
+	font-family: 'Cabin Sketch', cursive;
+	-webkit-mask: url(../images/mask-image.png);
+	mask: url(../images/mask-image.png);
+}
+
+.text-container{
+	padding: 0 10%;
+}
+
+.text-container p{
+	font-size: .8rem;
+	line-height: 1.2;
+	margin-left: 10px;
+	font-family: 'Jeju Gothic', serif;
+}
+
+.text-container span{
+	color: #c24747;
+	font-weight: 800;
+}
+
+.header-section-changing{
+  height: 145px;
+}
+
+.position-changing-left{
+	transform: translateX(-2000px);
+}
+
+.position-changing-right{
+	transform: translateX(2000px);
+}
+
+.heading-logo-changing{
+  transform: scale(1.3);
+  color: #fff;
+}
+
+.show-content{
+  background: #003652;
+  margin-top: -8px;
+  font-size: 2rem;
+}
+
+@keyframes flower{
+	0%{background-position: 0 0, 0 0, 0 0;}
+	50%{background-position: 250px 500px, 200px 200px, 150px 150px;}
+	100%{background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+@-moz-keyframes flower{
+	0%{background-position: 0 0, 0 0, 0 0;}
+	50%{background-position: 250px 500px, 200px 200px, 150px 150px;}
+	100%{background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+@-webkit-keyframes flower{
+	0%{background-position: 0 0, 0 0, 0 0;}
+	50%{background-position: 250px 500px, 200px 200px, 150px 150px;}
+	100%{background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+@-ms-keyframes flower{
+	0%{background-position: 0 0, 0 0, 0 0;}
+	50%{background-position: 250px 500px, 200px 200px, 150px 150px;}
+	100%{background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+@media screen and (min-width: 768px){
+
+  .navigation li{
+  	font-size: 1.3rem;
+  }
+
+  .link-container{
+    top: 55px;
+    right: 110px;
+  }
+
+  .page-main h1{
+  	position: absolute;
+    top: 60px;
+  	left: 50px;
+  	padding: 20px 50px;
+  }
+
+  .text-container{
+  	position: absolute;
+  	top: 225px;
+  	left: 6%;
+  	background: #fff;
+  	padding: 25px;
+  }
+
+  .text-container p{
+  	font-size: 1rem;
+  }
+
+  .header-section-changing{
+  	height: 135px;
+  }
+
+  .heading-logo-changing{
+  	margin-top: 0;
+  	transform: scale(1.3);
+  }
+
+}
+
+@media screen and (min-width: 992px){
+
+  .header-logo{
+    margin-top: 60px;
+  }
+
+  .page-main h1{
+    padding: 15px 25px;
+  }
+
+  .text-container{
+    top: 80px;
+    left: 41%;
+  }
+}

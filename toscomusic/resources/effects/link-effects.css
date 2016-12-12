@@ -1,0 +1,168 @@
+/* 기본 링크 스타일 */
+
+
+a {
+	text-decoration: none;
+	/*padding-bottom: 2px;*/
+	padding-bottom: 0.125rem;
+	/*border-bottom: 1px solid;*/
+	border-bottom-width: 0.0625rem solid;
+
+}
+
+a{
+	text-decoration: none;
+	padding-bottom: 0.125rem;
+	border-bottom-width: 0.0625rem solid;
+}
+
+
+/* 배경 색상 페이드(Fade in/out) 
+ .fade-bg
+ */
+
+ .fade-bg {
+ 	/*display: inline-block;*/
+ 	padding: 0.25em 0.375em;
+	transition: all 0.25s;
+	border-bottom:none;
+ }
+
+.fade-bg.round {
+	border-radius: 0.1875rem;
+}
+
+ .fade-bg:hover,
+ .fade-bg:focus {
+	background: #65b1e3;
+	color: #fff;
+ }
+
+
+ /* 전 방위 슬라이드 */
+/*overflow:hidden을 사용하기 위해 inline-block을 적용했다.*/
+ a[class*="slide-"]{
+ 	overflow:hidden;
+ 	position: relative;
+ 	display: inline-block;
+ 	vertical-align: bottom;
+ 	padding-bottom: 0.06em 0.12em;
+ 	border-bottom: none;
+ }
+ 
+ a[class*="slide-"]::after{
+ 	position: absolute;
+ 	content: attr(data-linktext);
+ 	width: 100%;
+ /*	padding: 0.1875em 0.375em;*/
+ 	background: #1f74bf;
+ 	color: #fff;
+ 	transition: all 0.4s;
+ 	text-align:center;
+ }
+
+ a.slide-from-left::after{
+	left: -110%;
+ }
+
+a.slide-from-left:hover::after,
+a.slide-from-left:focus::after{
+	left:0;
+}
+
+a.slide-from-right::after{
+	right: -110%;
+}
+a.slide-from-right:hover::after,
+a.slide-from-right:focus::after{
+	right:0;
+}
+
+a.slide-from-top::after{
+	top:-110%;
+}
+a.slide-from-top:hover::after,
+a.slide-from-top:focus::after{
+	top:0;
+	left:0;
+}
+
+a.slide-from-bottom:after{
+	bottom:-110%;
+}
+a.slide-from-bottom:hover::after,
+a.slide-from-bottom:focus::after{
+	bottom:0;
+	left:0;
+}
+
+
+.fade-underline{
+  border: 2px solid transparent;
+  /*장면 전환 : A -> B  B -> A*/
+  transition: border-bottom-color 543.86ms ease 706.154ms color ease;
+}
+
+  /*transition: ; 속성 지속시간 움직임유형 지간시간
+    property(ex. color,background, font-size,...,all) duration(ex. 100ms, 0.2s) timing-function
+      delay;*/
+  /*별도의 사용자 인터렉션 없이 처음부터 움직임을 제어하려면 animation*/
+  /*keyframe기본으로 애니메이션 제어를 하려면 animation*/
+
+
+.fade-underline:hover,
+.fade-underline:focus{
+  border-bottom-color: currentColor;
+  /*currentColor는 현재 색상을 상속받는다 지금은 즉 #c90038*/
+  color: #c90038;
+}
+
+a[class*="underline-"]{
+  position: relative;
+  border-bottom: none;
+  }
+
+a[class*="underline-"]::before{
+  content:'';
+  position: absolute;
+  border-bottom: 2px solid currentColor;
+  top:100%;
+  transition: all 0.3s;
+
+}
+
+a.underline-from-left::before{
+  left: 0;
+  right: 100%;
+}
+a.underline-from-left:hover::before,
+a.underline-from-left:focus::before{
+  left: 0;
+  right: 0%;
+
+}
+
+a.underline-from-right::before{
+	right:0;
+	left:100%;
+}
+
+a.underline-from-right:hover::before,
+a.underline-from-right:focus::before{
+	left:0;
+	right:0;
+}
+
+a.underline-from-center::before{
+	left:50%;
+	right:50%;
+}
+
+a.underline-from-center:hover::before,
+a.underline-from-center:focus::before{
+	left:0;
+	right:0;
+}
+
+
+ 

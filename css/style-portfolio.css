@@ -1,0 +1,288 @@
+body{
+	overflow-y: scroll;
+	background: #efefef;
+}
+
+.readable-hidden{
+	overflow: hidden;
+	position: absolute;
+	/* <shape> values */
+	/* <shape> = rect(top, right, bottom, left) */
+	clip: rect(0, 0, 0, 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+}
+
+.page-header{
+  position: fixed;
+  height: 250px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 0.7em 0;
+  background-color: #87b3db;
+  background-image: url('../images/snowfalling.png'), url('../images/snowfalling-400.png'), url('../images/snowfalling-300.png');
+  text-align: center;
+  text-shadow: 0 8px 10px rgba(23,22,22,0.2);
+  color: #fff;
+  -webkit-animation: snow 20s linear infinite;
+  -moz-animation: snow 20s linear infinite;
+  -ms-animation: snow 20s linear infinite;
+  animation: snow 20s linear infinite;
+}
+
+video.logo-video{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	object-fit: cover;
+	transform: scale(1);
+	transition: all 1s;
+}
+
+video.logo-video:hover,
+video.logo-video:focus{
+	transform: scale(1.1);
+}
+
+.header-logo{
+	margin-top: 60px;
+	margin-bottom: 45px;
+}
+
+.gnb{
+	margin-top: 10px;
+}
+
+.navigation li{
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  display: inline-block;
+  padding-left: 15px;
+  cursor: pointer;
+}
+
+.navigation a{
+  transform: scale(1);
+  transition: all .5s;
+}
+
+.navigation a:hover,
+.navigation a:focus{
+  transform: scale(1.3);
+  color: #003652;
+}
+
+.navigation a{
+	color: #fff;
+}
+
+.link-container{
+  width: 50px;
+  height: 50px;
+  background: #efefef;
+  background: url(../images/bars-blue.svg);
+  display: inline-block;
+  position: absolute;
+  background-size: cover;
+  top: 10px;
+  right: 10px;
+  border: none;
+}
+
+/* main container */
+.page-main{
+	width: 100%;
+	height: 70vh;
+	position: relative;
+	top: 272px;
+	left: 0;
+	box-sizing: border-box;
+}
+
+.page-main h1{
+	background: #c24747;
+	font-family: 'Cabin Sketch', cursive;
+	padding: 15px 10px;
+	opacity: 0.9;
+	-webkit-mask: url(../images/mask-image.png);
+	mask: url(../images/mask-image.png);
+}
+
+.main-wrapper {
+	width: 100%;
+	text-align: center;
+}
+
+.main-wrapper a{
+	box-sizing: border-box;
+	width: 45%;
+	margin-top: 20px;
+	background: #FFCC66;
+	float: left;
+	margin-left: 10px;
+	margin-right: 5px;
+}
+
+.main-wrapper article{
+	text-align: center;
+	padding: 35px 0;
+	opacity: 0.9;
+}
+
+.main-wrapper article p{
+	color: #003652;
+	font-family: 'Cabin Sketch', cursive;
+}
+
+[class^="portfolio-"]{
+	position: relative;
+}
+
+[class^="portfolio-"]:hover::after,
+[class^="portfolio-"]:focus::after{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	color: #fff;
+	border: 1px dotted #003652;
+}
+
+.portfolio-toscomusic:hover::after,
+.portfolio-toscomusic:focus::after{
+	content: 'HTML, CSS, JavaScript';
+	background: #669999;
+}
+
+.portfolio-todolist:hover::after,
+.portfolio-todolist:focus::after{
+	content: 'HTML, CSS, Angular 1';
+	background: #C24747;
+}
+
+.header-section-changing{
+  height: 145px;
+}
+
+.position-changing-left{
+	transform: translateX(-2000px);
+}
+
+.position-changing-right{
+	transform: translateX(2000px);
+}
+
+.heading-logo-changing{
+  transform: scale(1.3);
+  color: #fff;
+}
+
+.show-content{
+  background: #003652;
+  margin-top: -8px;
+  font-size: 2rem;
+}
+
+/* keyframes */
+@keyframes snow{
+	0%{background-position: 0 0, 0 0, 0 0;}
+	50%{background-position: 250px 500px, 200px 200px, 150px 150px;}
+	100%{background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+@-moz-keyframes snow{
+	0%{background-position: 0 0, 0 0, 0 0;}
+	50%{background-position: 250px 500px, 200px 200px, 150px 150px;}
+	100%{background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+@-webkit-keyframes snow{
+	0%{background-position: 0 0, 0 0, 0 0;}
+	50%{background-position: 250px 500px, 200px 200px, 150px 150px;}
+	100%{background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+@-ms-keyframes snow{
+	0%{background-position: 0 0, 0 0, 0 0;}
+	50%{background-position: 250px 500px, 200px 200px, 150px 150px;}
+	100%{background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+@media screen and (min-width: 768px){
+
+  .navigation li{
+  	font-size: 1.3rem;
+  }
+
+  .link-container{
+  	top: 55px;
+  	right: 110px;
+  }
+
+  .page-main h1{
+  	position: absolute;
+  	top: 60px;
+  	left: 50px;
+  	padding: 20px 50px;
+  }
+
+  .main-wrapper{
+  	width: 80%;
+    position: absolute;
+    left: 10%;
+  }
+
+  .main-wrapper a{
+    width: 45%;
+    margin-top: 225px;
+  }
+
+  .portfolio-toscomusic{
+  	margin-right: 0;
+  }
+
+  .header-section-changing{
+    height: 135px;
+  }
+
+  .heading-logo-changing{
+    margin-top: 0;
+    transform: scale(1.3);
+  }
+
+}
+
+@media screen and (min-width: 992px){
+
+  .header-logo{
+    margin-top: 60px;
+  }
+
+  .page-main h1{
+    padding: 15px 40px;
+  }
+
+  .main-wrapper{
+  	left: 36%;
+  	top: 80px;
+  	width: 50%;
+  }
+
+  .main-wrapper a{
+  	margin-top: 0;
+  	width: 43%;
+  }
+
+  .main-wrapper article {
+  	padding: 45px 0;
+  }
+}

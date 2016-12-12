@@ -1,0 +1,125 @@
+body{
+	overflow-y: scroll;
+	margin: 0;
+	background: #efefef;
+}
+
+.readable-hidden{
+	overflow: hidden;
+	position: absolute;
+	/* <shape> values */
+	/* <shape> = rect(top, right, bottom, left) */
+	clip: rect(0, 0, 0, 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+}
+
+.page{
+/* %는 상대적인 값인데 상위 태그의 height값이 없기 때문에 %로 적용이 되지 않는다. */
+/* 다른 요소의 영향을 받아 height값이 적용되는 것이 아니기 때문에 position: absolute로 설정한다. */
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 0.7em 0;
+  background-color: rgb(148, 204, 224);
+  background-image: url('../images/yellowflower.png'), url('../images/yellowflower-400.png'), url('../images/yellowflower-300.png');
+  text-align: center;
+  text-shadow: 0 8px 10px rgba(23,22,22,0.2);
+  color: #fff;
+  -webkit-animation: flower 20s linear infinite;
+  -moz-animation: flower 20s linear infinite;
+  -ms-animation: flower 20s linear infinite;
+  animation: flower 20s linear infinite;
+}
+
+.header{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+a.main-logo{
+	display: block;
+}
+
+.logo-image{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+}
+
+
+.gnb{
+	margin-top: 30px;
+}
+
+.navigation li{
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  display: inline-block;
+  padding-left: 15px;
+}
+
+.navigation a{
+  transform: scale(1);
+  transition: all .5s;
+  cursor: pointer;
+}
+
+.navigation a:hover,
+.navigation a:focus{
+  transform: scale(1.3);
+  color: #003652;
+}
+
+.navigation a{
+	color: #fff;
+}
+
+.text-box{
+	display: block;
+	text-align: center;
+	font-family: 'Cabin Sketch', cursive;
+	color: #000;
+	line-height: 1.8;
+	margin-top: 35px;
+	text-indent: 3px;
+	/*background: #efefef;*/
+	opacity: .6;
+	padding: 25px;
+}
+
+@keyframes flower{
+	0%{background-position: 0 0, 0 0, 0 0;}
+	50%{background-position: 250px 500px, 200px 200px, 150px 150px;}
+	100%{background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+@-moz-keyframes flower{
+	0%{background-position: 0 0, 0 0, 0 0;}
+	50%{background-position: 250px 500px, 200px 200px, 150px 150px;}
+	100%{background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+@-webkit-keyframes flower{
+	0%{background-position: 0 0, 0 0, 0 0;}
+	50%{background-position: 250px 500px, 200px 200px, 150px 150px;}
+	100%{background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+@-ms-keyframes flower{
+	0%{background-position: 0 0, 0 0, 0 0;}
+	50%{background-position: 250px 500px, 200px 200px, 150px 150px;}
+	100%{background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+@media screen and (min-width: 768px){
+  .navigation li{
+  	font-size: 1.3rem;
+  }
+}

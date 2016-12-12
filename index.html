@@ -1,189 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko-KR">
 <head>
-	<!-- viewport 메타태그를 height나 width값과 함께 사용하면 뷰포트의 높이나 너비를 각각 정의할 것이다. 웹사이트가 가장 최적으로 보이는 결과를 위해 device-height와 device-width 값을 적용하여 기기 디폴트를 사용하는 것을 권장 -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
-	<title>Charlotte Concerts | Live Music | Tosco Music</title>
-	<link rel="stylesheet" href="resources/font-awesome/font-awesome.min.css">
+	<title>My Github pages | Main</title>
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Cabin+Sketch|Gloria+Hallelujah" rel="stylesheet">
 	<link rel="stylesheet" href="resources/initialization/normalize.css">
 	<link rel="stylesheet" href="resources/initialization/common.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:700|Francois+One" rel="stylesheet">
-
+	<link rel="stylesheet" href="css/style-main.css">
+	<link rel="shortcut icon" href="images/Choco.png">
 </head>
 <body>
-  <section class="grid-container">
-    <h1 class="starting-container">starting container</h1>
-
-	<!-- header -->
-	<section class="header">
-		<h2 class="logo-mobile-heading logo-desktop">logo-mobile</h2>
-		<a href="" class="logo-link"><img src="images/ToscoLogo_main_RGB.png" alt="Tosco music logo"></a>
-		<!-- only desktop -->
-		<section class="navigation-bar hidden-content">
-		  <h2 class="navigation-heading">navigation bar</h2>
-			<ul class="gnb">
-				<li><a href="#">Events</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Performers</a></li>
-				<li><a href="#">Get involved</a></li>
-				<li><a href="#">News</a></li>
-				<li><a href="#">Contact</a></li>
+	<section class="page">
+		<h1 class="header">HYEJEONG</h1>
+		<!-- 왜 <div>요소를 감쌌을 경우에는 그 안의 요소에 display: block을 했을 때와는 또 다른 결과를 낳을까?
+		<div>가 있을 경우 정렬이 더 간편히 실행된다. 왜?? -->
+		<!-- <div class="video-wrapper"> -->
+			<!-- <a href=""><video src="../video/night-sky.mp4" class="logo-video" autoplay loop></a> -->
+		<!-- </div> -->
+		<a href="" class="main-logo"><img src="images/Choco.png" alt="main logo image" class="logo-image"></a>
+		<nav class="gnb">
+			<ul class="navigation">
+				<li><a href="pages/about-page.html">About Me</a></li>
+				<li><a href="pages/portfolio-page.html">Portfolio</a></li>
+				<li><a href="pages/contact-page.html">Contact</a></li>
 			</ul>
-		</section>
-		<!-- only mobile and tablet -->
-		<a href="#" class="bar-menu"></a>
+		</nav>
+
+			<p class="text-box">Your beliefs become your thoughts,<br>
+			Your thoughts become your words,<br>
+			Your words become your actions,<br>
+			Your actions become your habits,<br>
+			Your habits become your values,<br>
+			Your values become your destiny.</p>
 	</section>
 
-	<!-- main container -->
-	<section class="main-container">
-	  <h2 class="main-heading">main heading</h2>
-	  <div class="bg-video-container">
-		<video autoplay loop muted class="bg-video" poster="images/Tosco-Home-hero.jpg" src="media/ToscoWebsitePlate4-HD.mp4">
-		</video>
-	  </div>
-
-	  <div class="main-title">
-		<span class="main-txt">MUSIC THAT MOVES YOU.</span>
-		<a href="#" class="button-container">
-			<div class="button-down ho"></div>
-		</a>
-	  </div>
-
-	  <div class="next-event">
-	    <p class="event-title">next event<br>
-	    <span class="event-desc">Tosco music holiday party</span></p>
-		<p class="event-title">Date<br>
-		<span class="event-desc">dec 10</span></p>
-		<p class="event-title">time<br>
-		<span class="event-desc">7:30 PM</span></p>
-		<div class="btn_wrapper">
-	      <a href="#" class="btn_learn">Learn more</a>
-	      <a href="#" class="btn_ticket">buy ticket</a>
-		</div>
-	  </div>
-
-	  <div class="celebrate-container">
-	   <div class="txt-celebrate">
-	     <article class="txt-wrapper">
-		     <h2>Celebrate the power of music</h2>
-		     <p>WITH AN INFECTIOUS LOVE OF SONG AND AN INVITING SPIRIT, TOSCO MUSIC BREAKS DOWN THE BARRIERS BETWEEN PERFORMERS AND AUDIENCES TO CELEBRATE THE INCREDIBLE POWER OF MUSIC AND BRING PEOPLE TOGETHER.
-		     </p>
-	     </article>
-	   </div>
-	  </div>
-	
-	  <div class="container-join">
-	   	<div class="img-join-members"></div>
-	    <article class="join-member">
-	    	<h2 class="join-member-heading">become a member</h2>
-	   		<p class="join-txt">Support Tosco Music by becoming a member and enjoy exclusive perks and benefits.</p>
-	   		<a href="#" class="join-button">join today</a>
-	    </article>
-	  </div>
-	
-	  <div class="performers-bg"></div>
-	  <div class="past-container">
-	    <section class="past-performers">
-	      <h2 class="past-heading">past performers</h2>
-	      <article class="past-performers-txt-wrapper">
-	        <h2 class="past-performers-heading">past performers</h2>
-	        <p>For more than 25 years, Tosco Music has brought internationally acclaimed performers and emerging artists from all genres together to share their passion for music on the same stage.</p>
-	        <a href="#">learn more</a>
-	      </article>
-
-		<div class="carousel-wrapper">
-	      <article class="carousel-container">
-		    <h2 class="carousel-heading">carousel</h2>
-			<div class="carousel-view clearfix">
-				<article class="singer 01">
-					<h2>the avett brothers</h2>
-					<img src="images/PastPerformers-AvettBrothers.jpg" alt="singer AvettBrothers">
-					<p>Emerging from Concord, NC, the Grammy-nominated Avett Brothers combine elements of bluegrass, country, punk, pop, ragtime and indie rock and completed their 9th full length studio album in 2016.</p>
-				</article>
-				<article class="singer 02">
-					<h2>RACHEL PLATTEN</h2>
-					<img src="images/Past-Performer-Rachel-Platten-2.jpg" alt="singer Rachel Platten">
-					<p>Emmy-award winning Rachel Platten is a perhaps best known for her uplifting anthem “Fight Song.” Signing with Columbia Records in 2015, Rachel says, “Bringing people together is to me, the most important thing we can do in this life. I feel like that’s my mission with my music."</p>
-				</article>
-				<article class="singer 03">
-					<h2>LIVINGSTON TAYLOR</h2>
-					<img src="images/PastPerformers-LivingstonTaylor.jpg" alt="singer LivingstonTaylor">
-					<p>Raised in Chapel Hill, Livingston Taylor now teaches at Berklee College of Music in Boston, MA and still manages to perform over 80 shows a year. He is a natural performer, peppering his shows with personal stories, anecdotes and ineffable warmth that connect him to his fans.</p>
-				</article>
-				<article class="singer 04">
-					<h2>DAVID WILCOX</h2>
-					<img src="images/PastPerformers-DavidWilcox.jpg" alt="singer DavidWilcox">
-					<p>Considered a songwriter's songwriter, Asheville-based David Wilcox is now 18 records into a career marked by personal revelation and wildly loyal fans.</p>
-				</article>
-			</div>
-		  </article>
-		  <div class="carousel-controls">
-			<div class="carousel-navigator">
-			  <button type="button" class="ir carousel-previous-btn"></button>
-			  <button type="button" class="ir carousel-next-btn"></button>
-			</div>
-		  </div>
-
-		</div>
-		</section>
-	  </div>
-	
-	  <div class="news-container">
-	  	<section class="news-information clearfix">
-	  		<h2 class="news-heading">THE LATEST NEWS</h2>
-	  		<a href="#" class="view-info">view all</a>
-	  		<a href="#" class="info-toscomusic">
-	  			<article>
-	  				<h2 class="info-headline">what is tosco music?</h2>
-	  				<img src="images/latest-news-01.JPG" alt="about tosco music">
-	  				<p>oct 31</p>
-	  			</article>
-	  		</a>
-	  		<a href="#" class="info-schedule">
-	  			<article>
-	  				<h2 class="info-headline">tosco music open mic schedule</h2>
-	  				<img src="images/latest-news-02.jpg" alt="schedule">
-	  				<p>oct 12</p>
-	  			</article>
-	  		</a>
-	  		<a href="#" class="info-charlottefive">
-	  			<article>
-	  				<h2 class="info-headline">tosco music featured in charlottefive</h2>
-	  				<img src="images/latest-news-03.JPG" alt="charlottefive">
-	  				<p>sep 20</p>
-	  			</article>
-	  		</a>
-	  	</section>
-	  </div>
-	
-	  <div class="subscribe-container">
-		<section class="subscribe">
-		  <h2>Don't miss a beat.</h2>
-		  <p>stay up to date with all the latest tosco music news</p>
-		</section>
-		<div class="input-subscribe">
-		  <label for="subscribe" class="inputbox"><input type="text" id="subscribe" placeholder="Your Email Address"></label>
-		  <button type="button" class="btn-subscribe">subscribe</button>
-		</div>
-	  </div>
-	</section>
-	<!--main-container end  -->
-
-	<!-- footer container -->
-	  <section class="footer">
-	   <h2>footer section</h2>
-	  	<a href="#" class="privacy policy">Privacy Policy</a>
-	  	<a href="#" class="event-survey">Event Survey</a>
-	  	<a href="#" class="Photo-credits">Photo Credits</a>
-	  	<p>©2016 Tosco Music. All rights reserved.</p>
-	  </section>
-  </section>
-
-	<script src="js/carousel.js"></script>
-	<script src="js/toggle_button.js"></script>
-	<script src="js/arrow-button.js"></script>
 </body>
 </html>

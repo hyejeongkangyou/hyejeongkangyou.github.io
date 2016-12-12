@@ -1,0 +1,137 @@
+body{
+	min-width: 600px;
+	width: 90%;
+	margin: 5% auto;
+  /*text-align: center;*/
+}
+
+li{
+	list-style: none;
+}
+
+.controll-todolist{
+	border: 1px solid #efefef;
+	padding: 30px;
+}
+
+.list-container{
+  position: relative;
+}
+
+.wrapper{
+	display: inline-block;
+	border: 1px solid #a4a4a5;
+	border-radius: 6px;
+}
+
+.checkbox-container{
+	display: inline-block;
+}
+
+.add-list{
+  margin-left: 41px;
+  padding-left: 0;
+}
+
+.txtbox{
+	border: none;
+	width: 300px;
+	height: 42px;
+	font-size: 0.8rem;
+	padding-left: 8px;
+  margin-left: 3px;
+}
+
+.btn-remove{
+  width: 73px;
+  height: 44px;
+  background: #C95A50;
+  border: none;
+  border-radius: 0 5px 5px 0;
+}
+
+/* CHECK BOX */
+.checkbox-label{
+  position: absolute;
+  top: 14px;
+  left: -7px;
+}
+
+#checkbox {
+  position: relative;
+  top: -0.375rem;
+  margin: 0 1rem 0 0;
+  cursor: pointer;
+}
+
+#checkbox:before {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  content: "";
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 2px solid #003652;
+  background: #efefef;
+}
+
+#checkbox:checked:before {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  height: .9rem;
+  border-color: #6cc0e5;
+  /* border-left와 border-bottom을 -45deg로 꺾어서 만들었음 */
+  border-top-style: none;
+  border-right-style: none;
+  background: none;
+}
+
+#checkbox:after {
+  content: "";
+  position: absolute;
+  top: -0.125rem;
+  left: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #fff;
+  cursor: pointer;
+}
+
+.btn-submit{
+  width: 73px;
+  height: 44px;
+  background: #385ab7;
+  border: none;
+  border-radius: 0 5px 5px 0;
+}
+
+.btn-group{
+  margin-top: 15px;
+  margin-left: 41px;
+}
+
+.btn-group button{
+  width: 95px;
+  height: 40px;
+  border: none;
+  background: #edc00b;
+  box-shadow: 1px 1px 1px 1px #000;
+}
+
+button:focus,
+input[type="text"]:focus,
+input[type="checkbox"]:focus::before{
+    box-shadow: 0 0 1px 2px #68528e;
+    outline: none;
+}
+
+.btn-group button:active{
+  box-shadow: none;
+  outline: none;
+}
