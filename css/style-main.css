@@ -42,6 +42,10 @@ body{
 	margin-bottom: 10px;
 }
 
+.header a{
+  color: #fff;
+}
+
 .gnb{
 	margin-top: 30px;
 }
