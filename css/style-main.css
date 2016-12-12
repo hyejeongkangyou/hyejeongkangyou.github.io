@@ -38,20 +38,9 @@ body{
 }
 
 .header{
-	margin-top: 10px;
+	margin-top: 35%;
 	margin-bottom: 10px;
 }
-
-a.main-logo{
-	display: block;
-}
-
-.logo-image{
-	width: 150px;
-	height: 150px;
-	border-radius: 50%;
-}
-
 
 .gnb{
 	margin-top: 30px;
@@ -78,7 +67,7 @@ a.main-logo{
 }
 
 .navigation a{
-	color: #fff;
+  color: #666699;
 }
 
 .text-box{
@@ -119,7 +108,38 @@ a.main-logo{
 }
 
 @media screen and (min-width: 768px){
+
+  .header{
+    margin-top: 20%;
+    font-size: 3rem;
+  }
+
+  .gnb{
+  	margin-top: 54px;
+  }
+
   .navigation li{
+  	font-size: 1.5rem;
+  }
+
+  .text-box{
+    font-size: 1.5rem;
+    margin-top: 75px;
+  }
+}
+
+@media screen and (min-width: 992px){
+
+  .header{
+  	margin-top: 5%;
+  }
+
+  .navigation li{
+  	font-size: 1.4rem;
+  }
+
+  .text-box{
   	font-size: 1.3rem;
+  	margin-top: 55px;
   }
 }
