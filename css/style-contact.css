@@ -99,6 +99,7 @@ body{
 	padding: 15px 10px;
 	background: #ffcc66;
 	color: #c24747;
+  font-size: 1.5rem;
 	opacity: 0.9;
 	font-family: 'Cabin Sketch', cursive;
 	-webkit-mask: url(../images/mask-image.png);

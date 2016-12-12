@@ -107,6 +107,7 @@ video.logo-video:focus{
 .page-main h1{
 	background: #c24747;
 	font-family: 'Cabin Sketch', cursive;
+  font-size: 1.5rem;
 	padding: 15px 10px;
 	opacity: 0.9;
 	-webkit-mask: url(../images/mask-image.png);
