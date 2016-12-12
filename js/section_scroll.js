@@ -7,7 +7,7 @@ var heading_link = heading.querySelector('a');
 var navigation_bar = document.querySelector('.link-container');
 // console.log(navigation);
 // console.log(videoElement);
-var scrollPosition = 100;
+var scrollPosition = 90;
 var scroll_time;
 
 // 가장 처음 화면에서 navigation_bar가 보이지 않는 상태로 시작
